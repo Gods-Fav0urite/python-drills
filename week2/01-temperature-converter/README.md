@@ -9,7 +9,7 @@ Convert temperatures between Celsius, Fahrenheit and Kelvin using functions that
 - `celsius_to_kelvin(celsius) -> float`
 - `convert_temperature(value, from_unit, to_unit) -> float`
 
-units are `"celsius"`, `"fahrenheit"` and `"kelvin"`.
+Units are `"celsius"`, `"fahrenheit"` and `"kelvin"`.
 
 ## Examples
 | input | output | why |
@@ -30,4 +30,4 @@ units are `"celsius"`, `"fahrenheit"` and `"kelvin"`.
 - tests compare floats with `math.isclose`, so tiny rounding differences are fine
 
 ## Hint
-nine conversions look like a lot of formulas. what if every conversion went through one unit first?
+Nine conversions look like a lot of formulas. What if every conversion went through one unit first?

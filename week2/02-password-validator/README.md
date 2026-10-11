@@ -1,7 +1,7 @@
 # Password Validator
 
 ## Problem
-Check whether a password meets all five security rules. return `True` if all pass, `False` if any fail.
+Check whether a password meets all five security rules. Return `True` if all pass, `False` if any fail.
 
 ## Function Signatures (core)
 `has_min_length(password) -> bool`
@@ -21,9 +21,9 @@ Check whether a password meets all five security rules. return `True` if all pas
 | `has_special("Hello World")` | `False` | space does not count as special |
 
 ## Requirements
-implement all five `has_*` functions, then implement `is_valid_password` by calling them — don't repeat the logic inside `is_valid_password`.
+Implement all five `has_*` functions, then implement `is_valid_password` by calling them — don't repeat the logic inside `is_valid_password`.
 
-rules:
+Rules:
 - minimum 8 characters
 - at least one uppercase letter (A–Z)
 - at least one lowercase letter (a–z)
@@ -37,15 +37,15 @@ rules:
 - `is_valid_password` uses the five helper functions; don't duplicate the checks
 
 ## Hint
-how would you check if *at least one* character in a string satisfies a condition, without writing a manual `for` loop with a flag variable?
+How would you check if *at least one* character in a string satisfies a condition, without writing a manual `for` loop with a flag variable?
 
-## bonus
-implement `get_failed_requirements(password) -> list[str]`
+## Bonus
+Implement `get_failed_requirements(password) -> list[str]`
 
-returns a list of the rule names that failed, in this order:
+Returns a list of the rule names that failed, in this order:
 `"min_length"`, `"uppercase"`, `"lowercase"`, `"digit"`, `"special"`
 
-returns `[]` if the password is valid.
+Returns `[]` if the password is valid.
 
 ```python
 get_failed_requirements("hello@12")  # → ["uppercase"]
